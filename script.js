@@ -46,9 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar');
 
   window.addEventListener('scroll', () => {
-    navbar.style.background = window.scrollY > 50
-      ? 'rgba(10, 10, 15, 0.95)'
-      : 'rgba(10, 10, 15, 0.85)';
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
   });
 
   // --- Smooth reveal on scroll ---
@@ -76,4 +74,25 @@ document.addEventListener('DOMContentLoaded', () => {
       scrollIndicator.style.pointerEvents = window.scrollY > 300 ? 'none' : 'auto';
     });
   }
+
+  // --- Theme Toggle ---
+  const themeToggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+
+  function setTheme(theme) {
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }
+
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else {
+    setTheme('dark');
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    setTheme(current === 'light' ? 'dark' : 'light');
+  });
 });

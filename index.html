@@ -1,1 +1,310 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yahaya Azeez — Backend Developer & DevOps Engineer Portfolio">
+  <title>Yahaya Azeez | Backend & DevOps Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>&#x1f680;</text></svg>">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;YA /&gt;</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1>Yahaya Azeez</h1>
+        <p class="hero-title">Backend Developer & DevOps Engineer</p>
+        <p class="hero-location">Lagos, Nigeria</p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        <div class="hero-contact">
+          <a href="mailto:azconcept2016@gmail.com" aria-label="Email">azconcept2016@gmail.com</a>
+          <span class="hero-sep">|</span>
+          <a href="https://github.com/azconcept-droid/" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+      <p>
+        I'm a <strong>Backend Developer & DevOps Cloud Engineer</strong> with experience building
+        scalable REST APIs, managing cloud infrastructure, and automating deployments.
+        Currently serving as <strong>Backend Lead at MoriaFund</strong> (fintech) and
+        <strong>Assistant Lead at Vascon</strong>.
+      </p>
+          <p>
+            I hold a <strong>First Class Honours</strong> in Electrical & Electronics Engineering
+            from the University of Lagos, and I'm passionate about crafting robust backend systems
+            and reliable cloud infrastructure.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">18+</span>
+              <span class="stat-label">Servers Managed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Companies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Junior Backend Dev</h3>
+              <span class="timeline-company">MoriaFund — Remote</span>
+              <span class="timeline-date">Sep 2024 – Present</span>
+            </div>
+            <p>Building a scalable REST API with NestJS, MySQL, and TypeORM for a fintech application under the guidance of a Senior Developer.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Backend Dev (Team Lead)</h3>
+              <span class="timeline-company">Winnov8 (Start-up) — Remote</span>
+              <span class="timeline-date">Apr 2024 – Present</span>
+            </div>
+            <p>Leading 3 developers building a collaboration app with Node.js, PostgreSQL, and Sequelize ORM. Developing a scalable REST API from authentication to dashboard.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Junior DevOps Engineer</h3>
+              <span class="timeline-company">Vascon — Remote</span>
+              <span class="timeline-date">Aug 2023 – Present</span>
+            </div>
+            <p>Collaborating with 4 team members to oversee the SDLC of apps. Deploying and monitoring approximately 18 servers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">&#x1f4b0;</div>
+          <h3>MoriaFund</h3>
+          <p class="project-subtitle">EWallet, SavingGoals, Commodity Financing</p>
+          <p>Fintech application built with NestJS, MySQL, and TypeORM. Features digital wallet, savings goals, and commodity financing modules.</p>
+          <div class="project-tags">
+            <span>NestJS</span>
+            <span>MySQL</span>
+            <span>TypeORM</span>
+            <span>REST API</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">&#x1f91d;</div>
+          <h3>Winnov8 Collaboration App</h3>
+          <p class="project-subtitle">Team Collaboration Platform</p>
+          <p>Scalable collaboration platform built from scratch with Node.js, PostgreSQL, and Sequelize. Includes auth, real-time features, and dashboard.</p>
+          <div class="project-tags">
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>Sequelize</span>
+            <span>WebSocket</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">&#x2601;&#xfe0f;</div>
+          <h3>Infrastructure Automation</h3>
+          <p class="project-subtitle">18-Server Deployment & Monitoring</p>
+          <p>Automated deployment and monitoring pipeline for 18+ servers using Ansible, Terraform, Docker, Prometheus, and Grafana.</p>
+          <div class="project-tags">
+            <span>Ansible</span>
+            <span>Terraform</span>
+            <span>Docker</span>
+            <span>Prometheus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>NestJS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span>MySQL</span><span>PostgreSQL</span><span>Redis</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>ORMs</h3>
+          <div class="skill-tags">
+            <span>TypeORM</span><span>Sequelize</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud & OS</h3>
+          <div class="skill-tags">
+            <span>AWS</span><span>Azure</span><span>Linux</span><span>Windows</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Automation</h3>
+          <div class="skill-tags">
+            <span>Ansible</span><span>Terraform</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Containerization</h3>
+          <div class="skill-tags">
+            <span>Docker</span><span>Kubernetes</span><span>OpenShift</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Monitoring</h3>
+          <div class="skill-tags">
+            <span>Prometheus</span><span>Grafana</span><span>Uptime Kuma</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>API Management</h3>
+          <div class="skill-tags">
+            <span>APIC</span><span>Gravitee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section education" id="education">
+    <div class="container">
+      <h2 class="section-title">Education & Awards</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">&#x1f393;</div>
+          <h3>University of Lagos</h3>
+          <p class="edu-degree">BSc Honours (First Class)</p>
+          <p class="edu-meta">Electrical & Electronics Engineering</p>
+          <p class="edu-date">Sep 2017 – Sep 2023</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">&#x1f393;</div>
+          <h3>Yaba College of Technology</h3>
+          <p class="edu-degree">OND (Distinction)</p>
+          <p class="edu-meta">Electrical & Electronics Engineering</p>
+          <p class="edu-date">Sep 2013 – Apr 2016</p>
+        </div>
+      </div>
+      <div class="awards">
+        <h3>Awards</h3>
+        <ul>
+          <li>First Class Honours — University of Lagos</li>
+          <li>Best Graduating Student (OND), Faculty of Engineering — Yaba College of Technology</li>
+          <li>Best Graduating Student (O'Level) — Araromi Ilogbo Senior Secondary School</li>
+        </ul>
+      </div>
+      <div class="languages">
+        <h3>Languages</h3>
+        <div class="lang-tags">
+          <span>English</span>
+          <span>Arabic</span>
+          <span>Yoruba</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">Have a project, collaboration, or opportunity? Let's talk.</p>
+      <div class="contact-links">
+        <a href="mailto:azconcept2016@gmail.com" class="contact-card">
+          <span class="contact-icon">&#x2709;&#xfe0f;</span>
+          <span class="contact-label">Email</span>
+          <span>azconcept2016@gmail.com</span>
+        </a>
+        <a href="#" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-icon">&#x1f310;</span>
+          <span class="contact-label">GitHub</span>
+          <span>azconcept-droid</span>
+        </a>
+        <a href="#" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-icon">&#x1f465;</span>
+          <span class="contact-label">LinkedIn</span>
+          <span>Yahaya Azeez</span>
+        </a>
+        <div class="contact-card">
+          <span class="contact-icon">&#x1f4de;</span>
+          <span class="contact-label">Phone</span>
+          <span>(+234) 8109-5909-85</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Yahaya Azeez. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
